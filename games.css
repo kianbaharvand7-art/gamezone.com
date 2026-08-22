@@ -1,0 +1,137 @@
+body{
+    background-color: rgb(36, 28, 28);
+    font-family: "Rubik";
+}
+.header{
+    background: linear-gradient(to left,rgba(99, 8, 99, 0.791),rgb(47, 47, 125));
+    padding: 30px;
+    box-shadow: 0 0 25px rgba(181, 84, 84, 0.764);
+    border-radius: 18px;
+    width: 90%;
+    margin: 5px auto;
+    color: white;
+    position: relative;
+}
+.game-card{
+    background-color: black;
+    width: 20%;
+    height: 25%;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgb(83, 6, 83);
+    overflow: hidden;
+    margin-top: 30px;
+    transition: all 1.75s;
+    margin: 20px 0;
+    color: white;
+    text-align: center;
+    padding: 12px 10px;
+}
+.games{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 65px;
+}
+.game-card img{
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+     border-radius: 10px;
+     margin: 0;
+}
+.game-asdf{
+    text-decoration: none;
+    color: beige;
+    background-color: blueviolet;
+    padding: 10px 5px;
+    border-radius: 10px;
+    animation: b 1.5s ease-in-out infinite;
+    display: inline-block;
+    width: 80%;
+    margin: 20px auto;
+    font-weight: 600;
+}
+@keyframes b{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-3px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.qwwqqw img{
+    height: 10000px;
+    width: 10px;
+}
+nav{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 17px;
+    right: 65px;
+}
+@media(max-width:768px){
+    nav{
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+.title{
+    text-align: center;
+}
+svg{
+    width: 50px;
+    height: auto;
+    fill: aliceblue;
+}
+svg:hover{
+    transform: scale(1.2);
+}
+.game-card:hover h3{
+    color: rgb(141, 255, 190);
+    transform: scale(1.075);}
+
+.game-card img{
+    height: 320px;
+}
+.game-asdf:hover{
+    background-color: rgb(49, 142, 248);
+    color: rgb(255, 255, 255);
+}
+@media(max-width:768px){
+    .games{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header{
+        width: 95%;
+    }
+    .title h1{
+        font-size: 1.5rem;
+    }
+}
+.game-card:hover{
+    transform: scale(1.075);
+}
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    margin: 15px auto 20px;
+    transition: 1.5s;
+    color: rgb(129, 176, 203);
+}
+footer:hover{
+    transform: scale(1.05);
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> ثبت نام در گیم زون</title>
+     <link rel="stylesheet" href="sabtnam.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Noto+Sans+Arabic:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body dir="rtl">
+    <div class="form-container">
+    <nav>
+        <a href="./index.html">
+            <svg width="30" height="30" viewBox="0 0 24 24">
+        <path d="M3 10.5L12 3l9 7.5v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-10z"/>
+    </svg>
+        </a>
+    </nav>
+    <form action="perfect.html" method="" class="login">
+        <h1>ثبت نام در گیم زون</h1>
+        <div class="form-group">
+            <label for="username">نام کاربری</label>
+                <input type="text" name="username" id="username" minlength="3" maxlength="10" pattern="[A-Za-z0-9_]+" title="نام کاربری فقط باید شامل:حروف انگلیسی و اعداد و اندرلاین باشد(حداقل 3 و حداکثر10 کاراکتر)" required placeholder="مثال:koroush_1234">
+        </div>
+        <div class="form-group">
+            <label for="email">ایمیل</label>
+            <input type="email" name="email" id="email" pattern=".+@gmail\.com" title="ایمیل خود را کامل بنویسید" required placeholder="مثال:example@gmail.com">
+        </div>
+        <div class="form-group">
+            <label for="password">رمز عبور</label>
+            <input type="password" name="password" id="password" minlength="8" maxlength="10" title="حداقل 8 و حداکثر 10 کاراکتر" required placeholder="حداقل 8 و حداکثر 14 کاراکتر">
+        </div>
+        <div class="form-group">
+            <label for="number">شماره تماس</label>
+            <input type="tel" name="number" id="number"  pattern="09[0-9]{9}" title="شماره تماس باید با 09 شروع شود" placeholder="مثال:09000000000" required>
+        </div>
+        <div class="radio-group">
+            <input type="radio" name="gender" id="" required>
+            <label for="">آقا</label>
+            <input type="radio" name="gender" id="" >
+            <label for="">خانم</label>
+        </div>
+            <button type="submit">ثـبت اطـلاعات</button>
+    </form>
+    </div>
+</body>
+</html>

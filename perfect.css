@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(36, 28, 28);
+   font-family: "Rubik";
+
+}
+.header{        
+    background: linear-gradient(to left,rgba(99, 8, 99, 0.791),rgb(47, 47, 125));
+    padding: 30px;
+    box-shadow: 0 0 25px rgba(181, 84, 84, 0.764);
+    border-radius: 18px;
+    width: 80%;
+    color: white;
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+svg{
+    fill: aliceblue;
+    position: absolute;
+    top: 14%;
+    right: 50%;
+    width: 50px;
+    height: auto;
+}
+svg:hover{
+    transform: scale(1.2);
+}
